@@ -20,5 +20,7 @@ function deleteFromObjectByKey(object, key) {
 //deletes `key` from a clone of object and returns the new object
 
 function destructivelyDeleteFromObjectByKey(object, key) {
+  delete object[key]
+  return object
 }
 //returns object without the delete key/value pair:
